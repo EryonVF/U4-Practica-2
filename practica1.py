@@ -11,3 +11,7 @@ def bienvenido(name=None,ncontrol=None):
         return 'Bienvenido '
     if name!= None and ncontrol == None:
         return f'Bienvenido {name}'
+    if name == None and ncontrol != None:
+        return f'El número recibido es: {ncontrol}'
+    else:
+        return f'Bienvenido {name} tu numero de control es: {ncontrol}'
